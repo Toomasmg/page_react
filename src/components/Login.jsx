@@ -17,7 +17,7 @@ import {
   Lock 
 } from '@mui/icons-material';
 
-export default function Login({ setView }) {
+export default function Login({ setView, onLoginSuccess }) {
   const [showPassword, setShowPassword] = useState(false);
 
   const handleClickShowPassword = () => setShowPassword((show) => !show);
@@ -98,6 +98,7 @@ export default function Login({ setView }) {
           variant="contained" 
           size="large" 
           disableElevation
+          onClick={() => onLoginSuccess()}
           sx={{ 
             py: 1.5, 
             borderRadius: 2,
