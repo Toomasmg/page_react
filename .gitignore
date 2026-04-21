@@ -1,44 +1,24 @@
-# Dependencias
-node_modules/
-
-# Builds
-dist/
-build/
-
 # Logs
 logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Archivos de entorno
-.env
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
+node_modules
+dist
+dist-ssr
+*.local
 
-# Archivos del sistema
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-
-# IDEs y editores
-.vscode/
-.idea/
-
-# Cache
-.cache/
-.parcel-cache/
-
-# Archivos temporales
-*.tmp
-*.temp
-
-# Coverage (tests)
-coverage/
-
-# Archivos lock (opcional, si NO querés subirlos)
-package-lock.json
-yarn.lock
-pnpm-lock.yaml
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
